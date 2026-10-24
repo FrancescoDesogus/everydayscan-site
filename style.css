@@ -1,0 +1,88 @@
+:root {
+    --bg: #0b0f15;
+    --surface: #121822;
+    --border: #344052;
+    --text: #e6edf5;
+    --muted: #8c98aa;
+    --accent: #6a9be0;
+    --accent-soft: rgba(74, 127, 204, 0.16);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Bricolage Grotesque", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 16px 64px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #5cc6d9, #4e8ad8, #6b7fe0);
+    flex-shrink: 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+h2 {
+    margin: 32px 0 8px;
+    font-size: 20px;
+}
+
+p, li {
+    color: var(--text);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+a {
+    color: var(--accent);
+}
+
+.card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 20px 22px;
+    margin: 24px 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+}
